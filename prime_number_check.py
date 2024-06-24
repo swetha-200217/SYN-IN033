@@ -7,6 +7,7 @@ def is_prime(n):
     if n % 2 == 0 or n % 3 == 0:
         return False
     i = 5
+    # Check for factors from 5 onwards, but skip even numbers and multiples of 3
     while i * i <= n:
         if n % i == 0 or n % (i + 2) == 0:
             return False
